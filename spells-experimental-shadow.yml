@@ -1,0 +1,93 @@
+predefined-items:
+    shadow_grimoire:
+        type: "enchanted_book"
+        name: "&0Shadowed Book"
+        lore:
+          - "Detailed observations"
+          - "of shadows and notes"
+          - "about harnessing their power."
+    shadow_staff:
+        type: barrier
+        name: "&0Shadow Staff"
+        lore:
+          - "This staff blots out all light"
+    shadow_powder:
+        type: 289
+        name: "&0Shadow Powder"
+        lore:
+          - "Instant Darkness"
+##Item Creation
+lore_of_shadow:
+    spell-class: ".instant.ConjureSpell"
+    cast-item: book
+    spell-icon: enchanted_book
+    memory: 10
+    cost:
+        - levels 30
+        - book 1
+        - coal_block 1
+    items:
+        - shadow_grimoire
+shadow_staff:
+    permission-name: shadow
+    spell-class: ".instant.ConjureSpell"
+    cast-item: shadow_grimoire
+    cost:
+        - levels 10
+        - coal 32
+    memory: 5
+    items:
+        - shadow_staff 1
+shadow_powder:
+    permission-name: shadow
+    spell-class: ".instant.ConjureSpell"
+    cast-item: shadow_grimoire
+    cost:
+        - levels 1
+        - coal 32
+        - 289 1
+    memory: 5
+    items:
+        - shadow_powder 1
+#Advanced
+shadow_strike:
+    cooldown: 60
+    spell-class: ".targeted.PainSpell"
+    cast-item: shadow_staff
+    damage: 4
+    range: 10
+    cost:
+      - mana 15
+      - shadow_powder 1
+    modifiers:
+    #CHANGE item id
+      - holding "166|&0Shadow Staff" cooldown 0.1 
+duskrite:
+    permission-name: lunar
+    spell-class: ".instant.RitualSpell"
+    cast-item: ink_sac
+    prerequisites:
+        - lightsout
+    memory: 6
+    cost:
+        - mana 100
+        - ink_sac 5
+    ritual-duration: 400
+    charge-reagents-immediately: false
+    cooldown: 1800
+    spell: sunset
+    modifiers:
+        - day required
+    description: |
+            &eDuskrite: 6 Memory Shadow Spell
+            A ritual which will cause the sun to set.
+            This ritual requires three participants and takes 20 seconds of concentration to cast.
+            Moving will disrupt the ritual.  Requires the &eLightsout&3 spell.
+    str-cost: "100 mana and 1 gold ingot."
+    str-cast-self: You have begun the ritual to summon the dsut.
+    str-cast-others: "%a has begun a ritual to summon dusk.  Right-click to participate."
+    str-ritual-joined: You have joined in the dusk rite.
+    str-ritual-interrupted: The dusk rite has been interrupted!
+    str-ritual-fail: The dusk rite has failed.
+    str-ritual-success: The dusk is summoned!
+    str-modifier-failed: You can only begin this ritual at night.

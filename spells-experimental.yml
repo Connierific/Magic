@@ -1,0 +1,297 @@
+predefined-items:
+    #Dragon Magic
+    scale:
+        type: "409"
+        name: "&6Dragon Scale"
+        lore:
+          - Scale of a dragon
+          - THis scale is useless
+          - on it's own. Imbude
+          - it with magic to give
+          - this scale a use.
+    scale_water:
+        type: "409"
+        name: "&6Water Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with water.
+    scale_fire:
+        type: "409"
+        name: "&6Fire Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with fire.
+    scale_forest:
+        type: "409"
+        name: "&6Forest Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with forest power.
+    scale_death:
+        type: "409"
+        name: "&6Death Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with death.
+    scale_shadow:
+        type: "409"
+        name: "&6Shadow Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with shadow.
+    scale_solar:
+        type: "409"
+        name: "&6Solar Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with solar.
+    scale_storm:
+        type: "409"
+        name: "&6Storm Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with storm.
+    scale_stone:
+        type: "409"
+        name: "&6Stone Dragon Scale"
+        lore:
+          - Scale of a dragon.
+          - This scale is imbueded
+          - with stone.
+        
+        
+        
+    
+    
+    #XP    
+    stored_xp:
+        type: "351:10"
+        name: "&aCongealed Experiance"
+        lore:
+          - Experiance formed into
+          - a thick liquid
+
+          
+#XP
+makexp:
+    spell-class: ".instant.ConjureSpell"
+    spell-icon: experience_bottle
+    items:
+        - stored_xp 1
+    cost:
+        - experience 20
+        - mana 20
+    name: congeal_xp
+    effects:
+        1:
+            position: caster
+            effect: sound
+            sound: mob.slime.big
+getxp:
+    spell-class: ".ExternalCommandSpell"
+    spell-icon: experience_bottle
+    cost:
+        - stored_xp 1
+        - mana 5
+    command-to-execute: 
+        - "xp 20 %a"
+    execute-on-console-instead: true
+    name: uncongeal_xp
+    effects:
+        1:
+            position: caster
+            effect: sound
+            sound: random.drink
+#XP
+
+## Dragon Magic
+
+getscale:
+    name: salvage_scale
+    cooldown: 72000
+    spell-class: ".instant.ConjureSpell"
+    items:
+        - scale 1
+    cost:
+        - mana 300
+        - sand 512
+
+scale-fire:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_fire
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - blaze_rod 32
+        - scale 1
+        - mana 200
+    items:
+        - scale_fire 1
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: 51
+        2:
+            position: caster
+            effect: sound
+            sound: fire.fire
+scale-water:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_water
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - 326 8
+        - scale 1
+        - mana 200
+    items:
+        - scale_water 1
+        - bucket 8
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: 9
+        2:
+            position: caster
+            effect: sound
+            sound: liquid.swim
+scale-forest:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_forest
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - forest_concoction 64
+        - scale 1
+        - mana 200
+    items:
+        - scale_forest 1
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: 18
+scale-death:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_death
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - bone 64
+        - rotten_flesh 64
+        - scale 1
+    items:
+        - scale_death 1
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: skull:1
+        2:
+            position: caster
+            effect: sound
+            sound: mob.skeleton.death
+scale-solar:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_solar
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - sun_concoction 32
+        - scale 1
+        - mana 200
+    items:
+        - scale_solar 1
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: 147
+scale-shadow:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_shadow
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - 351:8 64
+        - mana 200
+        - scale 1
+    items:
+        - scale_shadow 1
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: coal_block
+scale-stone:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_stone
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - stone 128
+        - iron_ingot 32
+        - gold_ingot 16
+        - coal 64
+        - scale 1
+        - mana 200
+    items:
+        - scale_stone 1
+    effects:
+        1:
+            position: caster
+            effect: nova
+            type: 1
+        2:
+            position: caster
+            effect: sound
+            sound: random.anvil_break
+scale-storm:
+    cooldown: 6000
+    prerequisites: getscale
+    name: scale_imbuement_storm
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        - 35:4 32
+        - scale 1
+        - mana 200
+    items:
+        - scale_storm 1
+    effects:
+        1:
+            effect: lightning
+            position: caster
+##Unclassified Spells
+seedblast:
+    spell-class: ".instant.ProjectileSpell"
+    spell-icon: seeds
+    cancel-damage: true
+    max-distance: 25
+    spells: [explode]
+    cost:
+        - mana 20
+        - seeds 64
+##Effects
+explode:
+    spell-class: ".targeted.ExplodeSpell"
+    explosion-size: 4
+    prevent-block-damage: true
+    prevent-player-damage: false
+    damage-multiplier: 10
+    add-fire: false
+    simulate-tnt: false
+    ignore-canceled: false
+##Test
+test:
+    attribute: generic.maxHealth 100 0
+    allowed-ids: dirt, grass
+    spell-class: "com.icloud.nathananguyen.magicspellsaddon.spells.TargetedSpell.ImbuementSpell"
