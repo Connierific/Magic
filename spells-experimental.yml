@@ -5,66 +5,66 @@ predefined-items:
         name: "&6Dragon Scale"
         lore:
           - Scale of a dragon
-          - THis scale is useless
-          - on it's own. Imbude
-          - it with magic to give
-          - this scale a use.
+          - This scale is useless
+          - on it's own. Imbue it
+          - with magic to unlock
+          - its potential.
     scale_water:
         type: "409"
         name: "&6Water Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with water.
+          - Imbued with the 
+          - waves of water.
     scale_fire:
         type: "409"
         name: "&6Fire Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with fire.
+          - Imbued with the
+          - flames of fire.
     scale_forest:
         type: "409"
         name: "&6Forest Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with forest power.
+          - Imbued with the
+          - essence of the forest.
     scale_death:
         type: "409"
         name: "&6Death Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with death.
+          - Imbueded with the
+          - essence of death.
     scale_shadow:
         type: "409"
         name: "&6Shadow Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with shadow.
+          - Imbueded with the
+          - darkness of shadow.
     scale_solar:
         type: "409"
         name: "&6Solar Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with solar.
+          - Imbueded with the
+          - light with solar.
     scale_storm:
         type: "409"
         name: "&6Storm Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with storm.
+          - Imbued with the
+          - fury of storm.
     scale_stone:
         type: "409"
         name: "&6Stone Dragon Scale"
         lore:
           - Scale of a dragon.
-          - This scale is imbueded
-          - with stone.
+          - Imbued with the
+          - might of stone.
         
         
         
