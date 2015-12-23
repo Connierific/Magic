@@ -433,9 +433,3 @@ explode:
     add-fire: false
     simulate-tnt: false
     ignore-canceled: false
-
-##Test
-test:
-    attribute: generic.maxHealth 100 0
-    allowed-ids: dirt, grass
-    spell-class: "com.icloud.nathananguyen.magicspellsaddon.spells.TargetedSpell.ImbuementSpell"

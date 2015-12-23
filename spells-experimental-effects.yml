@@ -1,3 +1,38 @@
+predefined-items:
+    shadow-powder:
+        type: sulphur
+        name: "&0Shadow Powder"
+        lore: 
+            - "This is used in Shadow Magic"
+    shadow-grimoire:
+        type: "enchanted_book"
+        name: "&0Shadowed Book"
+        lore:
+          - "Detailed observations"
+          - "of the movements of the shadows"
+          - "and theories of how to"
+          - "harness their power."
+    shadow-concoction:
+        type: "518:7"
+        name: "&0Shadow Concoction"
+        lore:
+            - "Ancient mages condenced shadows into this form"
+            
+            
+shadow-concoction:
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        #Insert whatever here
+        - command 2305
+    items: 
+        - shadow-concoction 1
+shadow-powder:
+    spell-class: ".instant.ConjureSpell"
+    cost:
+        #Insert whatever here
+        - command 2305
+    items: 
+        - shadow-powder 1
 sunset:
     spell-class: ".ExternalCommandSpell"
     name: sunset
