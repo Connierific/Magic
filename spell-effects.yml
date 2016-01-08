@@ -56,7 +56,11 @@ storm-helper:
     execute-on-console-instead: true
     command-to-execute:
         - "weather thunder"
+<<<<<<< HEAD
 skyclear-helper:
+=======
+skycalm-helper:
+>>>>>>> refs/remotes/origin/Weather
     spell-class: ".ExternalCommandSpell"
     execute-on-console-instead: true
     command-to-execute:

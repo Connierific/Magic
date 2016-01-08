@@ -120,7 +120,9 @@ skycalm:
     permission-name: solar
     spell-class: ".instant.RitualSpell"
     cast-item: sun_staff
-    memory: 5
+    req-participants: 2
+    need-spell-to-participate: true
+    memory: 8
     cooldown: 300
     prerequisites:
         - solar_concoction
@@ -129,7 +131,11 @@ skycalm:
         - sun_concoction 3
         - levels 5
     ritual-duration: 100
+<<<<<<< HEAD
     charge-reagents-immediately: false
+=======
+    charge-reagents-immediately: true
+>>>>>>> refs/remotes/origin/Weather
     spell: skycalm-helper
     modifiers:
         - storm required
@@ -138,8 +144,10 @@ skycalm:
             You clear the skies of bad weather.
     str-cost: 50 mana, 5 xp and 3 solar concoctions.
     str-modifier-failed: The sky is already clear!
-    str-cast-start: You begin to calm the skies...
-    str-cast-self: The weather clears!
+    str-ritual-joined: You begin to calm the skies...
+    str-ritual-success: The weather clears!
+    str-ritual-failed: You are not able to dispel the storm, and your ingrediants are consumed!
+    str-cast-self: You begin to calm the skies...
 
 #########################################
 #           Magic Shears                #
