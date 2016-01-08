@@ -118,19 +118,18 @@ dawnrite:
     str-modifier-failed: You can only begin this ritual at night.
 skycalm:
     permission-name: solar
-    spell-class: ".instant.RitualSpell"
+    spell-class: ".ExternalCommandSpell"
     cast-item: sun_staff
     memory: 5
     cooldown: 300
-    prerequisites:
-        - solar_concoction
     cost:
         - mana 50
         - sun_concoction 3
         - levels 5
-    ritual-duration: 100
-    charge-reagents-immediately: false
-    spell: skycalm-helper
+    command-to-execute:
+        - "weather clear"
+    execute-on-console-instead: true
+    cast-time: 100
     modifiers:
         - storm required
     description: |

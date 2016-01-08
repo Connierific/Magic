@@ -137,17 +137,19 @@ lightning:
     str-modifier-failed: You can only target areas outside.
 storm:
     permission-name: storm
-    spell-class: ".instant.RitualSpell"
+    spell-class: ".ExternalCommandSpell"
     name: storm
     cooldown: 300
-    ritual-duration: 100
+    cast-time: 100
     cost:
         - mana 80
         - wool 3
         - levels 5
     memory: 8
     str-cost: 80 mana, 5 xp and 3 fleeces to channel the power.
-    spell: storm-helmper
+    command-to-execute:
+        - weather thunder
+    execute-on-console-instead: true
     modifiers:
         - outside required
     description: |
