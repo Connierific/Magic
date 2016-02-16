@@ -1,71 +1,71 @@
 cripple:
     spell-class: ".targeted.CrippleSpell"
+    effect-duration: 
     effect-strength: 2
-    effect-duration: 100
 fireworkblast:
     spell-class: ".TargetedMultiSpell"
-    cast-random-spell-instead: true
-    check-individual-cooldowns: false
     spells:
         - fwblast1
         - fwblast2
         - fwblast3
         - fwblast4
         - fwblast5
+    cast-random-spell-instead: true
+    check-individual-cooldowns: false
 fwblast1:
     spell-class: ".targeted.ExplodeSpell"
+    explosion-size: 0
     prevent-block-damage:  true
     prevent-player-damage:  true
-    explosion-size: 0
     effects:
         - pos2 fireworks yes yes 0 FF0000,00FF00,0000FF FFFF00,FF00FF,00FFFF
 fwblast2:
     spell-class: ".targeted.ExplodeSpell"
+    explosion-size: 0
     prevent-block-damage:  true
     prevent-player-damage:  true
-    explosion-size: 0
     effects:
         - pos2 fireworks yes yes 1 FF0000,00FF00,0000FF FFFF00,FF00FF,00FFFF
 fwblast3:
     spell-class: ".targeted.ExplodeSpell"
+    explosion-size: 0
     prevent-block-damage:  true
     prevent-player-damage:  true
-    explosion-size: 0
     effects:
         - pos2 fireworks yes yes 2 FF0000,00FF00,0000FF FFFF00,FF00FF,00FFFF
 fwblast4:
     spell-class: ".targeted.ExplodeSpell"
+    explosion-size: 0
     prevent-block-damage:  true
     prevent-player-damage:  true
-    explosion-size: 0
     effects:
         - pos2 fireworks yes yes 3 FF0000,00FF00,0000FF FFFF00,FF00FF,00FFFF
 fwblast5:
     spell-class: ".targeted.ExplodeSpell"
+    explosion-size: 0
     prevent-block-damage:  true
     prevent-player-damage:  true
-    explosion-size: 0
     effects:
         - pos2 fireworks yes yes 4 FF0000,00FF00,0000FF FFFF00,FF00FF,00FFFF
 nauseate:
     spell-class: ".targeted.PotionEffectSpell"
-    type: 9
-    strength: 1
     duration: 60
-    targeted: true
+    strength: 1
     target-players: true
+    targeted: true
+    type: 9
 poison:
     spell-class: ".targeted.PotionEffectSpell"
-    type: 19
-    strength: 1
     duration: 60
-    targeted: true
+    strength: 1
     target-players: true
+    targeted: true
+    type: 19
 punch:
     spell-class: ".targeted.ForcetossSpell"
     horizontal-force: 25
-    vertical-force: 10
     range: 5
+    vertical-force: 10
     target-players: true
     effects:
         bang:
@@ -74,12 +74,12 @@ punch:
 second_wind:
     spell-class: ".targeted.PotionEffectSpell"
     duration: 40
-    type: 10
     strength: 1
+    type: 10
 shove:
     spell-class: ".instant.ForcepushSpell"
-    pushback-force: 6
     additional-vertical-force: 3
+    pushback-force: 6
     max-vertical-force: 6
     effects:
         haha:
@@ -91,25 +91,23 @@ stun:
     duration: 3
 sunrise:
     spell-class: ".ExternalCommandSpell"
-    name: sunrise
-    description: Makes the sun rise.
-    execute-on-console-instead: true
     command-to-execute:
         - "time set 0"
+    execute-on-console-instead: true
+    description: "Makes the sun rise." # Possibly unneeded
 sunset:
     spell-class: ".ExternalCommandSpell"
-    name: sunset
-    description: Makes the sun set.
-    execute-on-console-instead: true
     command-to-execute:
         - "time set 12000"
+    execute-on-console-instead: true
+    description: "Makes the sun set." # Possibly unneeded
 stormy-helper:
     spell-class: ".ExternalCommandSpell"
-    execute-on-console-instead: true
     command-to-execute:
         - "weather thunder"
+    execute-on-console-instead: true
 sunny-helper:
     spell-class: ".ExternalCommandSpell"
-    execute-on-console-instead: true
     command-to-execute:
         - "weather clear"
+    execute-on-console-instead: true
