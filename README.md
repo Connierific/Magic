@@ -8,12 +8,14 @@ ORGANISATIONAL TASKS:
     - [Requires (prerequisites)]
     - [Modifiers]
 - Standardise spell layouts:
+    - Enabled
+    - Permission
     - spell-class
     - cast-item
     - spell-icon
     - casting costs (cost, cast time, cooldown, shared cooldowns)
     - learning requirements (prerequisites, precludes, replaces, and memory)
-    - spell-specific configuration (range, damage, etc) in alphabetical order
+    - spell-specific configuration (range, damage, etc) in alphabetical order, though the spells: or automatically-granted: can come first.
     - modifiers
     - strings
     - descritpin
