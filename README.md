@@ -8,10 +8,10 @@ ORGANISATIONAL TASKS:
     - [Requires (prerequisites)]
     - [Modifiers]
 - Predefined Items
-    - Set itmes in Alphabetical Order
+    - Set items in Alphabetical Order
     - Type
     - Name
-    - Enchahts
+    - Enchants
     - Lore
 - Standardise spell layouts:
     - Enabled
@@ -38,7 +38,7 @@ ORGANISATIONAL TASKS:
 
 DESIGN TASKS:
 - Technology tree
-    - Item creation spells should require bind, unbind, and scroll spells (which I suppose can be implicit in prerequisite descriptions), as well as 1-2 beginner spells
+    - Item creation spells should require bind, unbind, and scroll spells (which can be implicit in prerequisite descriptions), as well as 1-2 beginner spells
     - Intermediate spells should require an item creation spell (pads out memory cost)
     - Every school needs a grimoire and appropriate item creation spells tied to it (a few exceptions are allowed, such as the magic sickle, which is too vital to forest/solar magic to be heavily restricted)
 - Spell effects
