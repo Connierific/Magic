@@ -7,6 +7,12 @@ ORGANISATIONAL TASKS:
     - Descriptive text
     - [Requires (prerequisites)]
     - [Modifiers]
+- Predefined Items
+    - Set itmes in Alphabetical Order
+    - Type
+    - Name
+    - Enchahts
+    - Lore
 - Standardise spell layouts:
     - Enabled
     - Permission
