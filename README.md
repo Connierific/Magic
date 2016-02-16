@@ -6,20 +6,25 @@ ORGANISATIONAL TASKS:
     - (Colour code)Spellname: Lv(memory) (school) spell
     - Descriptive text
     - [Requires (prerequisites)]
+    - [Modifiers]
 - Standardise spell layouts:
     - spell-class
     - cast-item
     - spell-icon
-    - casting costs (cost, cast-time, cooldown)
+    - casting costs (cost, cast time, cooldown, shared cooldowns)
     - learning requirements (prerequisites, precludes, replaces, and memory)
-    - spell-specific configuration (range, damage, etc)
+    - spell-specific configuration (range, damage, etc) in alphabetical order
     - modifiers
-    - description and other strings
+    - strings
+    - descritpin
     - effects (particles, sound effects, etc)
 - Most vital strings to write:
     - Descriptions
     - str-cost
     - str-modifier-failed (if spell has require/denied modifiers)
+- Vital formatting
+    - Use quotation marks around ALL strings
+    - Do NOT use tabs. GItHub treats four spaces as tabs, so it's hard to tell. Just don't hit tab.
 
 DESIGN TASKS:
 - Technology tree
