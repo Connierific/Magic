@@ -27,6 +27,7 @@ ORGANISATIONAL TASKS:
 - Vital formatting
     - Use quotation marks around ALL strings
     - Do NOT use tabs. GItHub treats four spaces as tabs, so it's hard to tell. Just don't hit tab.
+    - No flags automatically given.
 
 DESIGN TASKS:
 - Technology tree
