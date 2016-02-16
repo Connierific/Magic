@@ -283,8 +283,8 @@ teach:
     spell-class: ".command.TeachSpell"
     require-known-spell: true
     str-usage: "Usage: /cast teach <target> <spell>"
-    str-no-target: No such player."
-    str-no-spell: You do not know a spell by that name."
+    str-no-target: "No such player."
+    str-no-spell: "You do not know a spell by that name."
     str-cant-teach: "You can't teach that spell."
     str-cant-learn: "That person cannot learn that spell."
     str-cast-self: "You have taught %t the %s spell."
